@@ -85,15 +85,14 @@ cc_defaults {
         "-performance-noexcept-move-constructor",
         "-performance-unnecessary-value-param",
     ],
-    tidy_flags: [
-        "-warnings-as-errors="
-        + "android-*,"
-        + "bugprone-*,"
-        + "cert-*,"
-        + "clang-analyzer-security*,"
-        + "google-*,"
-        + "misc-*,"
-        + "performance-*"
+    tidy_checks_as_errors: [
+        "android-*",
+        "bugprone-*",
+        "cert-*",
+        "clang-analyzer-security*",
+        "google-*",
+        "misc-*",
+        "performance-*",
     ],
     lto: {
         thin: true,
